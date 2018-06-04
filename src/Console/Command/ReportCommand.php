@@ -131,7 +131,12 @@ final class ReportCommand extends Command
         $io->title(
             "GitLab report for {$projectPath} from {$period->getStartDate()->format('c')} to {$period->getEndDate()->format('c')}"
         );
-        $io->table(['Label', 'Active issues (now)', 'Opened issues', 'Closed issues'], $reportData);
+        $io->table([
+            'Label',
+            'Opened issues',
+            'Closed issues',
+            'Active issues (now)',
+        ], $reportData);
 
         return 0;
     }
