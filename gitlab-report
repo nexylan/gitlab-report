@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__.'/vendor/autoload.php';
+
+use Nexy\GitLabReport\Console\Command\ReportCommand;
+use Symfony\Component\Console\Application;
+
+$command = new ReportCommand();
+$application = new Application('gitlab-report');
+$application->add($command);
+$application->setDefaultCommand($command->getName(), true);
+$application->run();

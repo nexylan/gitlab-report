@@ -1,0 +1,26 @@
+{
+    "name": "nexylan/gitlab-report",
+    "description": "GitLab report command line tool",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sullivan SENECHAL",
+            "email": "soullivaneuh@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Nexy\\GitLabReport\\": "src" }
+    },
+    "require": {
+        "php": "^7.2",
+        "symfony/console": "^4.1",
+        "m4tthumphrey/php-gitlab-api": "^9.9",
+        "php-http/guzzle6-adapter": "^1.1",
+        "symfony/yaml": "^4.1",
+        "league/period": "^3.4"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.1"
+    }
+}
