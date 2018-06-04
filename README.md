@@ -4,7 +4,7 @@ A simple PHP cli tool to get some GitLab report.
 
 ## Installation
 
-Clone the project and run `composer install`
+Clone the project and run `composer install`.
 
 ## Usage
 
